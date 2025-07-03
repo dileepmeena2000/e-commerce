@@ -1,0 +1,39 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "ecommerce app ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": " node index.js",
+    "nodemon": "nodemon index.js"
+  },
+  "author": "Techinfoyt",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^2.2.0",
+    "braintree": "^3.31.0",
+    "braintree-web-drop-in-react": "^1.2.1",
+    "cloudinary": "^1.41.0",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "datauri": "^4.1.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.1.4",
+    "helmet": "^7.2.0",
+    "init": "^0.1.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongo-sanitize": "^1.1.0",
+    "mongoose": "^7.6.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^7.0.3",
+    "prettier": "^3.6.1"
+  }
+}
