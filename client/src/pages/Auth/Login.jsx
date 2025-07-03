@@ -19,7 +19,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/user/login", {
+      const res = await axios.post("https://e-commerce-9t1e.onrender.com/api/user/login", {
         identifier,
         password,
       });

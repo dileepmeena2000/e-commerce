@@ -53,7 +53,7 @@ const totalPrice = () => {
 
   const getToken = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/product/braintree/token");
+      const { data } = await axios.get("https://e-commerce-9t1e.onrender.com/api/product/braintree/token");
       console.log(data , "Braintree clientToken" );
       setClientToken(data?.clientToken);
     } catch (error) {
@@ -71,7 +71,7 @@ const totalPrice = () => {
     try {
       setLoading(true);
       const { nonce } = await instance?.requestPaymentMethod();
-      const { data } = await axios.post("http://localhost:5000/api/product/braintree/payment", {
+      const { data } = await axios.post("https://e-commerce-9t1e.onrender.com/api/product/braintree/payment", {
         nonce,
         cart,
       });

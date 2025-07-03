@@ -29,7 +29,7 @@ const { name = "", email = "", address = "" } = auth?.user || {};
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.put("http://localhost:5000/api/user/profile-update", {
+      const { data } = await axios.put("https://e-commerce-9t1e.onrender.com/api/user/profile-update", {
         name,
         email,
         password,

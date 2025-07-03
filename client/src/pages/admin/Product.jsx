@@ -10,7 +10,7 @@ const Product = () => {
   //getall products
   const getAllProducts = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/product/get-all");
+      const { data } = await axios.get("https://e-commerce-9t1e.onrender.com/api/product/get-all");
       setProducts(data.products);
     } catch (error) {
       console.log(error);

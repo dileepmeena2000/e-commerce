@@ -11,7 +11,7 @@ export default function AdminRoute() {
   useEffect(() => {
     const authCheck = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/user/admin-auth", {
+        const res = await axios.get("https://e-commerce-9t1e.onrender.com/api/user/admin-auth", {
           headers: {
             Authorization: `Bearer ${auth?.token}`,
           },

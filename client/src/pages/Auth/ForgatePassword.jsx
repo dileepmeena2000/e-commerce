@@ -17,7 +17,7 @@ const ForgotPassword = () => {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/user/forgot-password', { email });
+      const res = await axios.post('https://e-commerce-9t1e.onrender.com/api/user/forgot-password', { email });
       setMessage(res.data.message);
 
       //  Navigate to /verify-otp and pass email in location state

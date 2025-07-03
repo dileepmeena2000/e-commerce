@@ -11,7 +11,7 @@ const Orders = () => {
 
   const getOrders = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/order/my-orders");
+      const { data } = await axios.get("https://e-commerce-9t1e.onrender.com/api/order/my-orders");
       setOrders(data.orders);
     } catch (error) {
       console.log(error);

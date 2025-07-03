@@ -1,34 +1,3 @@
-// import React from 'react'
-// import Layout from '../components/Layout/Layout'
-
-// function CategoryProduct() {
-//   return (
-//    <Layout>
-
-// <div className="container mt-5  ">
-// <div className="row  mt-5">
-
-//     <div className="col-md-6 mt-5" >
-
-
-// <h1> Show All Category </h1>
-
-// <p>Please Wait to Show....</p>
-//     </div>
-// </div>
-
-
-
-// </div>
-
-
-//    </Layout>
-//   )
-// }
-
-// export default CategoryProduct
-
-
 
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout/Layout";
@@ -54,7 +23,7 @@ const CategoryProduct = () => {
   const getProductsByCategory = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/category/single-category/${params.id}`
+        `https://e-commerce-9t1e.onrender.com/api/category/single-category/${params.id}`
       );
       if (data?.success) {
         setProducts(data.products || []);

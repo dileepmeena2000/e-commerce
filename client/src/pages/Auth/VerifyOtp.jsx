@@ -30,7 +30,7 @@ const VerifyOtp = () => {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/user/verifyOtp', { email, otp });
+      const res = await axios.post('https://e-commerce-9t1e.onrender.com/api/user/verifyOtp', { email, otp });
       setMessage(res.data.message);
       navigate('/reset', { state: { email } });
     } catch (err) {

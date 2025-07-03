@@ -11,7 +11,7 @@ export default function PrivateRoute() {
   useEffect(() => {
     const authCheck = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/user/user-auth", {
+        const res = await axios.get("https://e-commerce-9t1e.onrender.com/api/user/user-auth", {
           headers: {
             Authorization: `Bearer ${auth?.token}`,
           },

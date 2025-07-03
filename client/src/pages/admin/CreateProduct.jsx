@@ -21,7 +21,7 @@ const CreateProduct = () => {
   //get all category
   const getAllCategory = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/category/get-all");
+      const { data } = await axios.get("https://e-commerce-9t1e.onrender.com/api/category/get-all");
       if (data.success) {
         setCategories(data.categories);
       }
@@ -51,7 +51,7 @@ const handleCreate = async (e) => {
     productData.append("image", photo); 
 
     const { data } = await axios.post(
-      "http://localhost:5000/api/product/create",
+      "https://e-commerce-9t1e.onrender.com/api/product/create",
       productData
     );
 
