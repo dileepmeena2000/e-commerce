@@ -8,7 +8,7 @@
     "start": " node index.js",
     "nodemon": "nodemon index.js"
   },
-  "author": "Techinfoyt",
+  "author": "dileep",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^6.0.0",
