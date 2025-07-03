@@ -10,10 +10,11 @@ connectDB();
 
 //port
 const PORT = process.env.PORT || 8080;
+
 // listen
 app.listen(PORT, () => {
 
-  console.log(`https://velvety-chebakia-09e19a.netlify.app/:${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 
   console.log(
     `Server Running On PORT ${process.env.PORT} on ${process.env.NODE_ENV} Mode`

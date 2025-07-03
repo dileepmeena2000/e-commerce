@@ -15,7 +15,7 @@ import sanitize from "mongo-sanitize";
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:3000", 
+  origin: "https://velvety-chebakia-09e19a.netlify.app", 
   credentials: true,
 }));
 
